@@ -36,14 +36,10 @@
     // Every few hundred milliseconds, we'll draw another random ping.
     var colors = ['white'];
     setInterval(function() {
-
-        for (var x = 0, len = 10; x < len; x++) {
-            var lat = Math.random() * 170 - 85;
-            var lng = Math.random() * 360 - 180;
-            var color = colors[Math.floor(Math.random() * colors.length)];
-            globe.plugins.pings.add(lng, lat, { color: color, ttl: 2000, angle: Math.random() * 10 });
-
-        }
+        var lat = Math.random() * 170 - 85;
+        var lng = Math.random() * 360 - 180;
+        var color = colors[Math.floor(Math.random() * colors.length)];
+        globe.plugins.pings.add(lng, lat, { color: color, ttl: 2000, angle: Math.random() * 10 });
     }, 1);
 
     window.onload = function() {
