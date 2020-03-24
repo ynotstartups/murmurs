@@ -8,7 +8,7 @@
     // Note that we're loading a special TopoJSON file
     // (world-110m-withlakes.json) so we can render lakes.
     globe.loadPlugin(planetaryjs.plugins.earth({
-        topojson: { file:   './world-110m.json' },
+        topojson: { file:   'world-110m.json' },
         oceans:   { fill:   '#FFFFFF' },
         land:     { fill:   '#000000' },
         borders:  { stroke: '#FFFFFF' }
